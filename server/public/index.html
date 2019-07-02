@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.min.js"></script>
+    <script src="client.js"></script>
+    <title>Music Library</title>
+</head>
+<body>
+    <header><h1>Music Library (PG Intro)</h1></header>
+    <main>
+        <section>
+            <h2>Add New Music</h2>
+            <form> 
+                <label>Track:</label>
+                <input id="trackIn" type="text" size="40" /> 
+                <label>Artist:</label>
+                <input id="artistIn" type="text" size="40" /> 
+                <label>Rank:</label>
+                <input id="rankIn" type="number" size="40" /> 
+                <label>Publish:</label>
+                <input id="publishIn" type="date" size="40" /> 
+                <button id="submit">Submit</button>
+            </form>
+        </section>
+        <section> 
+            <h2>All Music</h2>
+            <table>
+                <thead>
+                <tr> 
+                    <th>Track</th>
+                    <th>Artist</th>
+                    <th>Rank</th>
+                    <th>Publlished</th>
+                </tr>
+                </thead>
+                <tbody id="music">
+                    <!-- jQuery will fill this in-->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
